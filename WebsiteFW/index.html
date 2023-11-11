@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Learning</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+        <div class="alert alert-danger text-center font-weight-bold text-light mb-0" style="background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #4285f4 100%);border-radius:0px;">
+            Practice! Practice! Practice!
+            <button class="close" data-dismiss="alert">&times;</button>
+        </div>
+
+    <section id="home" style="background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);">
+        <div class="container p-5">
+            <div class="col-md text-center mw m-auto">
+                <h1 style="font-weight:700;" class="custom-display text-light" data-aos="fade-down" data-aos-duration="900">Learn & Code.<br>Source for Everyone.</h1>
+                <p class="text-light">Accessible Learning & Coding Resources for All. Empower Everyone with Source Material.</p>
+                <a href="#roadmap"><button class="btn btn-primary font-weight-bold custom-btn-sm-block" data-aos="fade-up" data-aos-duration="900">Learn More</button></a>
+                <button type="button" class="btn btn-primary font-weight-bold custom-btn-sm-block mt-btn ml-lg-1 ml-md-1 ml-sm-1" data-toggle="modal" data-target="#modalBtn" data-aos="fade-up" data-aos-duration="900">Recommended</button>
+                  
+                <div class="modal fade" id="modalBtn">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title font-weight-bold">Recommended</div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-secondary text-left" style="font-weight:500;">Frontend Source:</p>
+                                <p class="blockquote-footer text-left"><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://www.coursera.org/" target="_blank">Coursera</a></p>
+                                <hr>
+                                <p class="text-secondary text-left" style="font-weight:500;">Backend Source:</p>
+                                <p class="blockquote-footer text-left"><a href="https://nodejs.org/" target="_blank">Node.js Official Website</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://expressjs.com/" target="_blank">Express.js Official Website</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://docs.djangoproject.com/" target="_blank">Django Documentation</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://www.digitalocean.com/community/tutorials" target="_blank">DigitalOcean Community Tutorials</a></p>
+                                <p class="blockquote-footer text-left"><a href="https://spring.io/guides" target="_blank">Spring Framework Documentation</a></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alert" class="mt-5 d-flex d-lg-none d-md-none">  
+        <div class="container">
+            <div class="alert alert-success">
+                <button class="close" data-dismiss="alert">&times;</button>
+                <h4 class="alert-heading">Reminder!</h4>
+                <hr />
+                <p class="mb-0">To view the Job-List properly, you need to switch to the Desktop Site.</p>
+
+               <div id="accordion">
+                <div id="showMore">
+                    <small data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: underline;color: blue;cursor:pointer;">See more</small>
+                   </div>
+               </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="showMore" data-parent="#accordion">
+                    <p class="text-secondary">
+                    <p class="text-secondary font-weight-bold">Manage desktop mode settings:</p>
+                    <small class="text-muted blockquote-footer">Tap on the 3 vertical dots for the menu.</small>
+                    <small class="text-muted blockquote-footer">The desktop site can be enabled by selecting the checkbox.</small>
+                    <small class="text-muted blockquote-footer">The page will reload automatically on your browser.</small>
+                    <small class="text-muted blockquote-footer">You will be able to view the site's desktop version on mobile devices.</small>
+                    <img src="https://listendesigner.com/wp-content/uploads/2019/12/how-to-use-google-desktop-site-on-mobile-3.jpg" alt="" class="container mt-4">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="joblist" style="margin-top:1em;">
+        <div class="container">
+            <h2 class="d-flex d-lg-none d-md-none d-block-sm mb-4 text-primary" style="font-weight:700;font-size:1.7rem;">Job-List</h2>
+            <div class="scrolling-wrapper row flex-row flex-nowrap">
+
+                <div class="col-5">
+                   <div class="card card-block" style="background: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220416200936/Top-10-Front-End-Developer-Skills-That-You-Need-in-2022.png')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position:right;"></div>
+                </div>
+                <div class="col-5">
+                   <div class="card card-block" style="background: url('https://media.licdn.com/dms/image/D5612AQF6ur3UgAvuyg/article-cover_image-shrink_600_2000/0/1685123035725?e=2147483647&v=beta&t=HlQfi0sPNCSXqB6spBt2fINEgsZMAFESoUk8ZPF-a3M')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position:center;"></div>
+                </div>
+                <div class="col-5">
+                   <div class="card card-block" style="background: url('https://images.ctfassets.net/aq13lwl6616q/2w6RsKsVuc0IwHImyqx1TZ/030dff02ec89e35c72cfff4f66f0065e/Become_a_Backend_Developer.jpg')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position: center;"></div>
+                </div>
+                <div class="col-5">
+                   <div class="card card-block" style="background: url('https://wuschools.com/wp-content/uploads/2019/10/Become-a-Full-Stack-Developer.png')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position: bottom;"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card card-block" style="background: url('https://images.ctfassets.net/aq13lwl6616q/6D0X8NWPKXQX7xYVQVMZbW/aa6d86ca31f80649d2c43f66c6b53463/Ethical_Hacker_-_CyberSec_Expert.jpg?w=800&h=450&fl=progressive&q=100&fm=jpg&bg=transparent')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position:center;"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card card-block" style="background: url('https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699056000&semt=ais')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position:center;"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card card-block" style="background: url('https://cdn.analyticsvidhya.com/wp-content/uploads/2023/10/data-science.png')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position:center;"></div>
+                </div>
+                <div class="col-5">
+                    <div class="card card-block" style="background: url('https://media.geeksforgeeks.org/wp-content/uploads/20221027115808/SkillsRequiredtoBecomeaCloudEngineer.png')no-repeat;background-size:cover;height:150px;border:none;box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);background-position:center;"></div>
+                </div>
+
+            </div>
+            <div class="pseduo-track"></div>
+        </div>
+    </section>
+
+
+    <section id="sources" style="margin-top:4rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-5 images" data-aos="flip-left" data-aos-duration="900">
+                   <a href="https://www.w3schools.com/python/" target="_blank"> <img src="https://seeklogo.com/images/P/python-logo-A32636CAA3-seeklogo.com.png" class="img img-fluid bg-light p-3 m1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-up">
+                   <a href="https://www.w3schools.com/js/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-right" data-aos-duration="900">
+                    <a href="https://www.w3schools.com/html/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-down" data-aos-duration="900">
+                     <a href="https://www.w3schools.com/css/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-right" data-aos-duration="900">
+                   <a href="https://www.w3schools.com/java/" target="_blank"> <img src="data:image/png;base64,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" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-down" data-aos-duration="900">
+                    <a href="https://www.w3schools.com/php/" target="_blank"><img src="data:image/png;base64,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" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-up" data-aos-duration="900">
+                    <a href="https://www.w3schools.com/cpp/" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/cplusplus_plain_logo_icon_146580.png" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-left" data-aos-duration="900">
+                   <a href="https://www.w3schools.com/cs/index.php" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgngNtdqjqeLvzKK1QlkMMDONwXWBJ8D3Dlw&usqp=CAU" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+            </div>
+
+            <div class="row mt-1">
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-left" data-aos-duration="900">
+                   <a href="https://www.tutorialspoint.com/ruby/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2048px-Ruby_logo.svg.png" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-up" data-aos-duration="900">
+                   <a href="https://www.w3schools.com/KOTLIN/index.php" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-down" data-aos-duration="900">
+                    <a href="https://www.w3schools.com/typescript/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 images" data-aos="flip-right" data-aos-duration="900">
+                   <a href="https://sqlpd.com/" target="_blank"> <img src="data:image/png;base64,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" class="img img-fluid bg-light p-3 m-1" alt="Responsive images"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="roadmap" style="background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);">
+        <div class="container p-5" style="margin-top:8rem;">
+            <h1 style="font-weight: 700;" data-aos="zoom-out" data-aos-duration="900" class="text-light"><ins>RoadMap</ins></h1>
+            <p class="blockquote-footer text-light" data-aos="zoom-in-left" data-aos-duration="900">Consider this comprehensive roadmap, it might guide you effectively in both frontend and backend development, fostering a successful programming career.</p>
+            <div class="badge" data-aos="zoom-in-right" data-aos-duration="900">
+                <button type="button" class="badge badge-primary text-uppercase" data-original-title="CODE" data-toggle="tooltip" data-placement="bottom">code</button>
+                <button type="button" class="badge badge-secondary text-uppercase" data-original-title="LEARN" data-toggle="tooltip" data-placement="top">learn</button>
+                <button type="button" class="badge badge-success text-uppercase" data-original-title="ADAPT" data-toggle="tooltip" data-placement="bottom">adapt</button>
+                <button type="button" class="badge badge-info text-uppercase" data-original-title="PERSIST" data-toggle="tooltip" data-placement="top">persist</button>
+                <button type="button" class="badge badge-warning text-uppercase" data-original-title="REPEAT!" data-toggle="tooltip" data-placement="right">repeat</button>
+            </div>
+            <table class="table mt-4 table-bordered table-striped table-hover">
+                <thead class="text-light"style="background-color: #0093E9;
+                background-image: linear-gradient(160deg, #0093E9 0%, #4285f4 100%);border-radius:0px;">
+                    <tr>
+                        <th>Frontend</th>
+                        <th>Backend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-light">
+                        <td>Learn HTML and CSS</td>
+                        <td>Learn a Programming Language</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>Master JavaScript</td>
+                        <td>Databases</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>Responsive Web Design</td>
+                        <td>Web Servers</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>Version Control (Git)</td>
+                        <td>API Developmen</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>CSS Preprocessors and Build Tools</td>
+                        <td>Server-Side Frameworks</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>Frontend Frameworks and Libraries</td>
+                        <td>Authentication and Authorization</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>Web Performance Optimization</td>
+                        <td>Testing and Debugging</td>
+                    </tr>
+                    <tr class="text-light">
+                        <td>Accessibility and Browser Compatibility</td>
+                        <td>Deployment and Scalability</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <section id="progress" style="margin-top: 2.5rem;">
+        <div class="container">
+           <div class="text">
+            <p class="text-secondary font-weight-bold">HTML</p>
+            <div class="progress">
+                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 89%;" aria-valuenow="89" aria-valuemax="100%">89%</div>
+            </div>
+           </div>
+
+           <div class="text mt-3">
+            <p class="text-secondary font-weight-bold">CSS</p>
+            <div class="progress">
+                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 85%;" aria-valuenow="85" aria-valuemax="100%">85%</div>
+            </div>
+           </div>
+
+           <div class="text mt-3">
+            <p class="text-secondary font-weight-bold">JAVASCRIPT</p>
+            <div class="progress">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 77%;" aria-valuenow="77" aria-valuemax="100%">77%</div>
+            </div>
+           </div>
+
+           <div class="text mt-3">
+            <p class="text-secondary font-weight-bold">JAVA</p>
+            <div class="progress">
+                <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 51%;" aria-valuenow="51" aria-valuemax="100%">51%</div>
+            </div>
+           </div>
+
+           <div class="text mt-3">
+            <p class="text-secondary font-weight-bold">PHP</p>
+            <div class="progress">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 24%;" aria-valuenow="24" aria-valuemax="100%">24%</div>
+            </div>
+           </div>
+
+           <div class="text mt-3">
+            <p class="text-secondary font-weight-bold">RUBY</p>
+            <div class="progress">
+                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 17%;" aria-valuenow="17" aria-valuemax="100%">17%</div>
+            </div>
+           </div>
+
+           <div class="text mt-3">
+            <p class="text-secondary font-weight-bold">SQL</p>
+            <div class="progress">
+                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 93%;" aria-valuenow="93" aria-valuemax="100%">93%</div>
+            </div>
+           </div>
+
+        </div>
+    </section>
+    
+
+    <footer class="footer mt-5 text-center">
+        <div class="jumbotron mb-0" style="background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #4285f4 100%);border-radius:0px;">
+            <h2 style="font-weight: 700;font-size:2rem;color:#efefef;">JMD.</h2>
+            <hr>
+            <small style="color:#efefef;">Created by John Mark @ 2023-2024</small>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        AOS.init();
+    </script>
+</body>
+</html>
